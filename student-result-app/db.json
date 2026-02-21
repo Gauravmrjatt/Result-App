@@ -1,0 +1,32 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "section": "A",
+      "marks": 85,
+      "grade": "A"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "section": "B",
+      "marks": 92,
+      "grade": "A+"
+    },
+    {
+      "id": "3",
+      "name": "Sam Wilson",
+      "section": "A",
+      "marks": 78,
+      "grade": "B"
+    },
+    {
+      "name": "Test Student",
+      "section": "C",
+      "marks": 95,
+      "grade": "A",
+      "id": "ca82"
+    }
+  ]
+}
