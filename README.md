@@ -1,46 +1,48 @@
 # Student Result App
 
-A small React application for managing student records and results: list students, add a new one, and open a detail view. Data is served by a local `json-server` database.
+A small React app for managing student records: list them, add one, open the details. Data comes from a local `json-server` database.
 
-## Features
+## What it does
 
-- Student list with detail view
-- Add-student form with controlled inputs
-- Data layer isolated in a service module, so the JSON backend can be swapped for a real API
-- Vite dev server with fast refresh and ESLint configured
+- Student list with a detail view
+- Add student form with controlled inputs
+- All API calls live in one service module, so swapping the JSON backend for a real one is a one file change
+- Vite dev server, ESLint configured
+
+About 570 lines across 11 files, 3 components.
 
 ## Stack
 
-React · Vite · json-server · ESLint
+React, Vite, json-server, ESLint.
 
-## Structure
+## Layout
 
 ```
 student-result-app/
-  db.json                     json-server database
+  db.json                       json-server database
   src/
-    App.jsx                   routes and layout
+    App.jsx
     components/
       StudentList.jsx
       StudentForm.jsx
       StudentDetails.jsx
-    services/studentService.js  API calls
+    services/studentService.js
 ```
 
-## Getting started
+## Run it
 
 ```bash
 cd student-result-app
 npm install
 ```
 
-Start the mock API in one terminal:
+Start the mock API:
 
 ```bash
 npm run server      # json-server on :3000
 ```
 
-Start the app in another:
+Start the app in a second terminal:
 
 ```bash
 npm run dev
@@ -48,10 +50,10 @@ npm run dev
 
 ## Scripts
 
-| Command | Description |
+| Command | What it does |
 |---|---|
 | `npm run dev` | Vite dev server |
 | `npm run build` | Production build |
 | `npm run preview` | Preview the build |
 | `npm run lint` | ESLint |
-| `npm run server` | Serve `db.json` with json-server on port 3000 |
+| `npm run server` | Serve `db.json` on port 3000 |
